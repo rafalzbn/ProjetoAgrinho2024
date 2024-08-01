@@ -1,0 +1,174 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, h1, p, div, a, button, header, main, footer, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    background-color: #e4e2e2;
+    color: #000000;
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #37966e, #64c45b);
+    color: white;
+    padding: 10px 20px;
+    font-family: Roboto, sans-serif;
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700
+}
+
+.logo img {
+    height: 130px;
+}
+
+
+/* Menu */
+#menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu a:hover {
+    background-color:  rgba(15, 97, 72, 0.219);
+}
+
+/* Ícone do menu */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(241, 241, 241);
+    margin: 4px;
+}
+
+/* Seção principal */
+main {
+    padding: 20px;
+    padding-top: 60px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.carousel-slide {
+    display: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #37966e, #64c45b);
+    color: white;
+    width: 100%;
+}
+
+/* Estilo responsivo */
+@media (min-width: 600px) {
+    #menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-icon {
+        display: none;
+    }
+}
+p {
+    font-size: 1em; 
+    line-height: 1.6; 
+    margin: 10px 0;
+    color: #333; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+}
+.section {
+    margin: 20px auto; /* Centraliza a seção com espaçamento superior e inferior */
+    padding: 20px;
+    box-sizing: border-box;
+}
+.section h2 {
+    text-align: center;
+    color: #333;
+}
+.section p {
+    margin: 10px;
+    text-align: justify; /* Justifica o texto para melhor apresentação */
+}
+main {
+    padding-top: 60px; /* Espaço para o menu fixo */
+    padding-left: 150px;
+    padding-right: 150px;
+    box-sizing: border-box;
+}
+.content {
+    margin: 100 auto;
+    max-width: 800px;
+}
+img{
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    height: 400px;
+
+}
